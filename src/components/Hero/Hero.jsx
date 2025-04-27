@@ -2,6 +2,13 @@ import React from 'react';
 import './Hero.css';
 
 const Hero = () => {
+  const scrollToServices = () => {
+    const servicesSection = document.getElementById('services');
+    if (servicesSection) {
+      servicesSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+  
   return (
     <section className="hero" id="home">
       <div className="hero-content">
@@ -10,7 +17,7 @@ const Hero = () => {
           Experience premium fabric care with our eco-friendly services. 
           We handle everything from daily laundry to delicate fabrics with utmost care.
         </p>
-        <a href="#services" className="learn-more-button">Our Services</a>
+        <button onClick={scrollToServices} className="learn-more-button">Our Services</button>
       </div>
       <div className="hero-image">
         <div className="image-placeholder">

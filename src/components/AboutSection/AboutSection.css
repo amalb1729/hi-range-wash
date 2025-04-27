@@ -226,3 +226,88 @@
     padding: 1.5rem;
   }
 }
+
+@media (max-width: 480px) {
+  .about-section-container {
+    padding: 2rem 1rem;
+  }
+  
+  .about-story,
+  .values-section {
+    margin-bottom: 2.5rem;
+  }
+  
+  .about-story h2, 
+  .values-section h2, 
+  .detailed-services h2 {
+    font-size: 1.5rem;
+  }
+  
+  .about-story h2::after,
+  .values-section h2::after,
+  .detailed-services h2::after {
+    width: 40px;
+    height: 2px;
+    bottom: -8px;
+  }
+  
+  .about-text p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+  }
+  
+  .values-grid {
+    gap: 1rem;
+    margin-top: 1.5rem;
+  }
+  
+  .value-card {
+    padding: 1.5rem;
+  }
+  
+  .value-card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .value-card p {
+    font-size: 0.9rem;
+  }
+  
+  .service-header {
+    padding: 1.2rem;
+  }
+  
+  .service-icon {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .service-header h3 {
+    font-size: 1.3rem;
+  }
+  
+  .service-tagline {
+    font-size: 0.9rem;
+  }
+  
+  .service-body {
+    padding: 1.2rem;
+  }
+  
+  .service-detailed-description {
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+  }
+  
+  .service-benefits h4 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .service-benefits li {
+    font-size: 0.9rem;
+    margin-bottom: 0.3rem;
+  }
+}

@@ -100,3 +100,30 @@
     width: 100%;
   }
 }
+
+@media (max-width: 480px) {
+  .hero {
+    padding: 2rem 1rem;
+    min-height: auto;
+  }
+  
+  .secondary-tagline {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-description {
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .learn-more-button {
+    padding: 0.6rem 1.5rem;
+    font-size: 0.9rem;
+  }
+  
+  .image-placeholder {
+    height: 200px;
+    max-width: 100%;
+  }
+}
