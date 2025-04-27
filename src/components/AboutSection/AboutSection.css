@@ -1,0 +1,228 @@
+.about-section-container {
+  width: 100%;
+  padding: 4rem 4rem;
+  background-color: #f9f5ed;
+  box-sizing: border-box;
+}
+
+.about-story {
+  max-width: 1200px;
+  margin: 0 auto 4rem;
+}
+
+.about-story h2 {
+  font-family: 'Montserrat', sans-serif;
+  color: #4A7A6E;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  position: relative;
+}
+
+.about-story h2::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 3px;
+  background-color: #D1A954;
+}
+
+.about-content {
+  display: flex;
+  justify-content: center;
+}
+
+.about-text {
+  max-width: 800px;
+}
+
+.about-text p {
+  font-family: 'Open Sans', sans-serif;
+  color: #333;
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+/* Values Section */
+.values-section {
+  max-width: 1200px;
+  margin: 0 auto 4rem;
+}
+
+.values-section h2 {
+  font-family: 'Montserrat', sans-serif;
+  color: #4A7A6E;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  position: relative;
+}
+
+.values-section h2::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 3px;
+  background-color: #D1A954;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.value-card {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.value-card:hover {
+  transform: translateY(-5px);
+}
+
+.value-card h3 {
+  font-family: 'Montserrat', sans-serif;
+  color: #4A7A6E;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+.value-card p {
+  font-family: 'Open Sans', sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Detailed Services */
+.detailed-services {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.detailed-services h2 {
+  font-family: 'Montserrat', sans-serif;
+  color: #4A7A6E;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  position: relative;
+}
+
+.detailed-services h2::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 3px;
+  background-color: #D1A954;
+}
+
+.detailed-service-card {
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  margin-bottom: 2rem;
+}
+
+.service-header {
+  background-color: #D7B899;
+  padding: 2rem;
+  text-align: center;
+}
+
+.service-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.service-header h3 {
+  font-family: 'Montserrat', sans-serif;
+  color: #4A7A6E;
+  font-size: 1.8rem;
+  margin: 0.5rem 0;
+}
+
+.service-tagline {
+  font-family: 'Playfair Display', serif;
+  color: #4A7A6E;
+  font-size: 1.1rem;
+  font-style: italic;
+}
+
+.service-body {
+  padding: 2rem;
+}
+
+.service-detailed-description {
+  font-family: 'Open Sans', sans-serif;
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.service-benefits h4 {
+  font-family: 'Montserrat', sans-serif;
+  color: #4A7A6E;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+.service-benefits ul {
+  padding-left: 1.5rem;
+}
+
+.service-benefits li {
+  font-family: 'Open Sans', sans-serif;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+@media (max-width: 992px) {
+  .about-section-container {
+    padding: 3rem 2rem;
+  }
+  
+  .about-text {
+    text-align: center;
+  }
+  
+  .values-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-section-container {
+    padding: 2rem 1rem;
+  }
+  
+  .about-story h2, 
+  .values-section h2, 
+  .detailed-services h2 {
+    font-size: 1.8rem;
+  }
+  
+  .service-header {
+    padding: 1.5rem;
+  }
+  
+  .service-body {
+    padding: 1.5rem;
+  }
+}
