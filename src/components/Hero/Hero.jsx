@@ -21,7 +21,7 @@ const Hero = () => {
       </div>
       <div className="hero-image">
         <div className="image-placeholder">
-        <img src="/src/assets/folded.jpg" alt="Clean, Fresh Laundry" />
+        <img src="/folded.jpg" alt="Clean, Fresh Laundry" />
         </div>
       </div>
     </section>
